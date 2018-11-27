@@ -119,6 +119,8 @@ belongBuild.factory("belongAPIservice", function($http) {
       url: "../json/member.json"
     });
   };
+
+  //Payload is just shown how can we make a post request for search method.
   belongAPI.searchItems = function(payload) {
     return $http({
       method: "GET",
