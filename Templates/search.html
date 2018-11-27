@@ -1,0 +1,47 @@
+<div ng-controller="searchController">
+  <div class="search-books-bar">
+    <form name="form" ng-submit="submitAuctionForm(form.$valid)" novalidate>
+      <a class="close-search" ng-click="goToHome()"></a>
+      <div class="search-books-input-wrapper">
+        <input
+          type="text"
+          ng-model="user.search"
+          placeholder="Search by title or author"
+        />
+        <input type="submit" value="Search" class="btn" />
+      </div>
+    </form>
+  </div>
+  <div class="bookshelf search-result" ng-if="showAuctiondata.length>0">
+    <h2 class="bookshelf-title">{{ user.search }}</h2>
+    <div class="bookshelf-books">
+      <ul class="books-grid">
+        <li ng-repeat="list in showAuctiondata">
+          <div class="book">
+            <div class="book-top">
+              <picture class="banner">
+                <img src="{{list.bookImage}}" alt="Item Image" />
+              </picture>
+              <div class="book-shelf-changer">
+                <select
+                  ng-model="selectedList.CR"
+                  ng-change="updateList(selectedList.CR,list)"
+                >
+                  <option value="none" disabled="">Move to...</option>
+                  <option value="currentlyReading" ng-selected="selected"
+                    >Currently Reading</option
+                  >
+                  <option value="wantToRead">Want to Read</option>
+                  <option value="read">Read</option>
+                  <option value="none">None</option>
+                </select>
+              </div>
+            </div>
+            <div class="book-title">{{ list.name }}</div>
+            <div class="book-authors">{{ list.author }}</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

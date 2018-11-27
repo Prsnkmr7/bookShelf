@@ -1,0 +1,100 @@
+<div ng-controller="homeController">
+  <section class="full-width-grid">
+    <div class="title-book">Book List Details</div>
+    <div class="bookshelf">
+      <h2 class="bookshelf-title">Currently Reading</h2>
+      <div class="bookshelf-books">
+        <ul class="books-grid">
+          <li ng-repeat="list in filterSecId(listItems,'currentlyReading')">
+            <div class="book">
+              <div class="book-top">
+                <picture class="banner">
+                  <img src="{{list.bookImage}}" alt="Item Image" />
+                </picture>
+                <div class="book-shelf-changer">
+                  <select
+                    ng-model="selectedList.CR"
+                    ng-change="updateList(selectedList.CR,list)"
+                  >
+                    <option value="none" disabled="">Move to...</option>
+                    <option value="currentlyReading" ng-selected="selected"
+                      >Currently Reading</option
+                    >
+                    <option value="wantToRead">Want to Read</option>
+                    <option value="read">Read</option>
+                    <option value="none">None</option>
+                  </select>
+                </div>
+              </div>
+              <div class="book-title">{{ list.name }}</div>
+              <div class="book-authors">{{ list.author }}</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="bookshelf">
+      <h2 class="bookshelf-title">Read</h2>
+      <div class="bookshelf-books">
+        <ul class="books-grid">
+          <li ng-repeat="list in filterSecId(listItems,'read')">
+            <div class="book">
+              <div class="book-top">
+                <picture class="banner">
+                  <img src="{{list.bookImage}}" alt="Item Image" />
+                </picture>
+                <div class="book-shelf-changer">
+                  <select
+                    ng-model="selectedList.RD"
+                    ng-change="updateList(selectedList.RD,list)"
+                  >
+                    <option value="none" disabled="">Move to...</option>
+                    <option value="currentlyReading">Currently Reading</option>
+                    <option value="wantToRead">Want to Read</option>
+                    <option value="read" ng-selected="selected">Read</option>
+                    <option value="none">None</option>
+                  </select>
+                </div>
+              </div>
+              <div class="book-title">{{ list.name }}</div>
+              <div class="book-authors">{{ list.author }}</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="bookshelf">
+      <h2 class="bookshelf-title">Want to Read</h2>
+      <div class="bookshelf-books">
+        <ul class="books-grid">
+          <li ng-repeat="list in filterSecId(listItems,'wantToRead')">
+            <div class="book">
+              <div class="book-top">
+                <picture class="banner">
+                  <img src="{{list.bookImage}}" alt="Item Image" />
+                </picture>
+                <div class="book-shelf-changer">
+                  <select
+                    ng-model="selectedList.WRD"
+                    ng-change="updateList(selectedList.WRD,list)"
+                  >
+                    <option value="none" disabled="">Move to...</option>
+                    <option value="currentlyReading">Currently Reading</option>
+                    <option value="wantToRead" ng-selected="selected"
+                      >Want to Read</option
+                    >
+                    <option value="read">Read</option>
+                    <option value="none">None</option>
+                  </select>
+                </div>
+              </div>
+              <div class="book-title">{{ list.name }}</div>
+              <div class="book-authors">{{ list.author }}</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="open-search" ng-click="goToSearch()">+</div>
+  </section>
+</div>

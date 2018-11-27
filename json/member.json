@@ -1,0 +1,64 @@
+{
+  "booksDetail": [
+    {
+      "name": "Kilgore Trout",
+      "author": "Breakfast of Champions",
+      "bookImage": "../assets/image/firstImage.jpg",
+      "shelfType": "currentlyReading"
+    },
+    {
+      "name": "Lunch of Champions",
+      "author": "Prasun Trout",
+      "bookImage": "../assets/image/secondImage.jpg",
+      "shelfType": "read"
+    },
+    {
+      "name": "Javascript Masters",
+      "author": "Danish Ali",
+      "bookImage": "../assets/image/thirdImg.png",
+      "shelfType": "currentlyReading"
+    },
+    {
+      "name": "The Beast in town",
+      "author": "Sourav Dada",
+      "bookImage": "../assets/image/fourthImage.jpg",
+      "shelfType": "wantToRead"
+    },
+    {
+      "name": "The Bakwas Gang",
+      "author": "sachin Tichkule",
+      "bookImage": "../assets/image/fifthImage.jpg",
+      "shelfType": "wantToRead"
+    },
+    {
+      "name": "Kilgore Trout",
+      "author": "Breakfast of Champions",
+      "bookImage": "../assets/image/firstImage.jpg",
+      "shelfType": "currentlyReading"
+    },
+    {
+      "name": "Lunch of Champions",
+      "author": "Prasun Trout",
+      "bookImage": "../assets/image/secondImage.jpg",
+      "shelfType": "wantToRead"
+    },
+    {
+      "name": "Javascript Masters",
+      "author": "Danish Ali",
+      "bookImage": "../assets/image/thirdImg.png",
+      "shelfType": "read"
+    },
+    {
+      "name": "The Beast in town",
+      "author": "Sourav Dada",
+      "bookImage": "../assets/image/fourthImage.jpg",
+      "shelfType": "wantToRead"
+    },
+    {
+      "name": "The Bakwas Gang",
+      "author": "sachin Tichkule",
+      "bookImage": "../assets/image/fifthImage.jpg",
+      "shelfType": "currentlyReading"
+    }
+  ]
+}

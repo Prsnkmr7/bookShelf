@@ -1,0 +1,12 @@
+@font-face {
+  font-family: Avenir-Bold;
+  src: url("../assets/fonts/AvenirLTStd-Book.otf");
+}
+@font-face {
+  font-family: Avenir-light;
+  src: url("../assets/fonts/AvenirLTStd-Light.otf");
+}
+@font-face {
+  font-family: Avenir-roman;
+  src: url("../assets/fonts/AvenirLTStd-Roman.otf");
+}

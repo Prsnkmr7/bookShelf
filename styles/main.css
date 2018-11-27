@@ -1,0 +1,188 @@
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ccc;
+}
+.full-width-grid,
+.content-wrapper {
+  width: 100%;
+  margin: 0px auto;
+  background: #fff;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.content-wrapper {
+  width: 100%;
+  margin: 0px auto;
+  padding: 20px 0;
+  background: #fbfbfb;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+.title-book {
+  padding: 10px 0;
+  background: #dc9493;
+  text-align: center;
+  font: 700 30px/60px Avenir-Bold;
+  color: #333;
+}
+
+.bookshelf {
+  padding: 0 20px 40px;
+}
+
+h2 {
+  text-align: left;
+  font: 700 25px/40px Avenir-Bold;
+  color: #333;
+  border-bottom: 1px solid #dedede;
+  margin: 30px 0;
+}
+
+.books-grid {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.books-grid li {
+  padding: 10px 15px;
+  text-align: left;
+  margin: 10px;
+}
+
+.book {
+  width: 200px;
+}
+.book-top {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.book-top img {
+  width: 170px;
+  height: 210px;
+}
+
+.book-shelf-changer {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2ae575;
+  background-image: url(../assets/image/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.book-shelf-changer select {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.book-title,
+.book-authors {
+  margin-top: 10px;
+  font: 700 15px/10px Avenir-Bold;
+  color: #333;
+}
+
+.book-authors {
+  color: #969191;
+}
+
+.open-search {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #2ae575;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-size: 40px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 900;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-books-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 0 6px rgba(0, 0, 0, 0.23);
+}
+
+.close-search {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 60px;
+  background: white;
+  background-image: url(../assets/image/backarrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px;
+  border-right: 1px solid #ccc;
+}
+
+.search-books-input-wrapper {
+  float: left;
+}
+
+.search-books-bar input {
+  float: left;
+  padding: 15px 20px;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  width: 400px;
+  font: 700 25px/30px Avenir-Bold;
+}
+
+.search-books-bar input.btn {
+  width: auto;
+  cursor: pointer;
+}
+
+.search-result {
+  margin-top: 80px;
+}
